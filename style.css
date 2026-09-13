@@ -390,11 +390,6 @@ body {
   .rec {
     width: 100%;
   }
-  .image {
-    width: 25px;
-    height: 25px;
-    margin-top: 20px;
-  }
 }
 @media (max-width: 620px) {
   .footer__text {
@@ -485,4 +480,9 @@ body {
   .section__info-text {
     font-size: 32px;
   }
+}
+.image {
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
 }
