@@ -8,15 +8,17 @@ html {
 a {
   color: inherit;
 }
-* {
+body {
+  color: white;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
+}
+* {
   font-family: "Google Sans", sans-serif;
   font-optical-sizing: auto;
   text-decoration: none;
   outline: none;
-  color: white;
 }
 .header {
   color: white;
@@ -286,7 +288,7 @@ body {
 }
 
 /* Медиа-запрос на 750px и меньше */
-@media (max-width: 750px) {
+@media (max-width: 790px) {
   .header__top-span {
     display: none; /* Скрываем обычную навигацию */
   }
@@ -297,6 +299,12 @@ body {
 
   .header__logo {
     margin-left: 20px;
+  }
+  .footer {
+    margin-top: 100px;
+  }
+  .first__img-text {
+    font-size: 32px;
   }
 }
 /* Модальное меню на половину экрана */
@@ -371,6 +379,23 @@ body {
     width: 100%;
   }
 }
+
+@media (max-width: 1150px) {
+  .first__img {
+    display: block;
+  }
+  .second__div {
+    margin-left: 60px;
+  }
+  .rec {
+    width: 100%;
+  }
+  .image {
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+  }
+}
 @media (max-width: 620px) {
   .footer__text {
     margin-top: 60px;
@@ -379,6 +404,9 @@ body {
     align-items: center; /* Выравнивает всё по центру */
     gap: 20px; /* Расстояние между текстом и иконками */
     margin-bottom: 50px;
+  }
+  .second__div {
+    margin-left: 0;
   }
 
   .ty {
@@ -441,15 +469,20 @@ body {
   .img {
     margin-left: 0;
   }
-}
-@media (max-width: 1150px) {
-  .first__img {
-    display: block;
+  .second__img-text {
+    margin-left: 0;
   }
-  .second__div {
-    margin-left: 60px;
+  .second__section-infotext {
+    margin-left: 0;
   }
-  .rec {
+  .first__img-text {
+    font-size: 32px;
+  }
+  .img {
     width: 100%;
+    height: auto;
+  }
+  .section__info-text {
+    font-size: 32px;
   }
 }
